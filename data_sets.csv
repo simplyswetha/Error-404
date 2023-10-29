@@ -1,0 +1,27 @@
+import pandas as pd
+
+# Create a dictionary to store survey data
+survey_data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],
+    'Age': [28, 22, 35, 30, 26],
+    'Gender': ['Female', 'Male', 'Male', 'Male', 'Female'],
+    'Social_Media_Usage': ['Facebook', 'Twitter', 'Instagram', 'LinkedIn', 'None'],
+    'Posting_Frequency': [5, 3, 7, 2, 0],
+    'Interaction_Style': ['Active', 'Passive', 'Balanced', 'Active', 'Passive'],
+    'Openness_to_Experience': [7, 9, 6, 8, 5],
+    'Conscientiousness': [6, 8, 7, 9, 6],
+    'Extraversion': [8, 4, 6, 7, 5],
+    'Agreeableness': [7, 9, 6, 8, 5],
+    'Neuroticism': [3, 2, 4, 3, 5],
+    'Puzzles_Solved': [10, 5, 8, 6, 9],
+    'Preferred_Puzzle_Type': ['Sudoku', 'Crossword', 'Riddles', 'Sudoku', 'None'],
+    'Job_Matching': ['Data Scientist', 'UI/UX Designer', 'Software Engineer', 'Web Development', 'Cyber Security'],
+    'Ethical_Considerations': ['Respect privacy and consent', 'Equal opportunities for all', 'Transparency in assessments', 'Fair evaluation process', 'Non-discrimination'],
+    'Data_Privacy_Consent': ['Yes', 'Yes', 'Yes', 'Yes', 'Yes']
+}
+
+# Create a DataFrame from the survey data
+df = pd.DataFrame(survey_data)
+
+# Save the dataset as a CSV file
+df.to_csv('survey_dataset.csv', index=False)
