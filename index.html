@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: black;
+            font-weight: bold;
+            font-family: 'Glacial Indifference', sans-serif;
+        }
+
+        .input-box {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        input[type="text"]:empty {
+            color: black;
+        }
+
+        .next-button {
+            margin-top: 20px;
+            background-color: darkmagenta;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Glacial Indiffrence','sans-serif';
+        }
+
+        .next-button:hover {
+            background-color: darkmagenta;
+            font-family: 'Glacial Indiffrence','sans-serif';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>LinkedIn</h1>
+        <div class="input-box">
+            <input type="text" placeholder="Enter URL">
+        </div>
+        <button class="next-button" id="nextButton">Next</button>
+
+        <script>
+            document.getElementById("nextButton").addEventListener("click", function() {
+                // Redirect to the Google Form URL when the button is clicked
+                window.location.href = "https://forms.gle/ocEnATc72AephSsY7";
+            });
+        </script>
+    </div>
+</body>
+
+</html>
